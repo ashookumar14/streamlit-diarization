@@ -12,6 +12,7 @@ def file_selector(folder_path=path):
 
 
 filename = file_selector()
+st.write(filename)
 file_name = os.path.join(path, filename)
 audio_file = open(file_name, 'rb')
 audio_bytes = audio_file.read()
