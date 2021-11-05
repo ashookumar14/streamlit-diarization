@@ -12,9 +12,9 @@ def file_selector(folder_path=path):
 
 
 filename = file_selector()
-st.write(filename)
-file_name = os.path.join(path, filename)
-audio_file = open(file_name, 'rb')
+#st.write(filename)
+#file_name = os.path.join(path, filename)
+audio_file = open(filename, 'rb')
 audio_bytes = audio_file.read()
 st.audio(audio_bytes, format='audio/ogg')
 
