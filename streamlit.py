@@ -22,7 +22,7 @@ url = "https://mldev.servicepack.ai:8081/diarize/"
 
 payload={}
 files=[
-  ('file',(filename,open(file_name,'rb'),'audio/wav'))
+  ('file',(filename,open(filename,'rb'),'audio/wav'))
 ]
 headers = {}
 
