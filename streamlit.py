@@ -12,7 +12,7 @@ def file_selector(folder_path=path):
 
 
 filename = file_selector()
-#st.write(filename)
+st.write(selected_filename)
 #file_name = os.path.join(path, filename)
 audio_file = open(filename, 'rb')
 audio_bytes = audio_file.read()
@@ -22,7 +22,7 @@ url = "https://mldev.servicepack.ai:8081/diarize/"
 
 payload={}
 files=[
-  ('file',(filename,open(filename,'rb'),'audio/wav'))
+  ('file',(selected_filename,open(filename,'rb'),'audio/wav'))
 ]
 headers = {}
 
