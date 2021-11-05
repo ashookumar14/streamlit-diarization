@@ -3,7 +3,7 @@ import os
 import requests
 import json
 
-path = "D:\\Thinclab\\Servicepack\\Audio files\\resampled"
+path = "./resampled/"
 
 def file_selector(folder_path=path):
     filenames = os.listdir(folder_path)
